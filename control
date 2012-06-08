@@ -1,0 +1,10 @@
+Package: ws.hbang.plugication
+Name: Plugication
+Pre-Depends: firmware (>= 4.0)
+Depends: mobilesubstrate, preferenceloader, applist (>= 1.3)
+Version: 1.2~beta2
+Architecture: iphoneos-arm
+Description: Plays iPod when headphones are connected
+Maintainer: thekirbylover
+Author: thekirbylover
+Section: Tweaks
