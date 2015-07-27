@@ -1,7 +1,8 @@
 *.deb
-_
+debs/*
 obj
 *.o
 theos
+.theos
 *~
 *.save
