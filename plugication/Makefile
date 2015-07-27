@@ -1,11 +1,12 @@
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = Plugication
-Plugication_FILES = Plugication.mm
+Plugication_FILES = HBRootListController.m HBHeaderView.m
 Plugication_INSTALL_PATH = /Library/PreferenceBundles
-Plugication_FRAMEWORKS = UIKit
+Plugication_FRAMEWORKS = UIKit MessageUI Social CoreGraphics
 Plugication_PRIVATE_FRAMEWORKS = Preferences
-
+Plugication_LDFLAGS = -lMobileGestalt
+Plugication_LIBRARIES += cephei
 include $(THEOS_MAKE_PATH)/bundle.mk
 
 internal-stage::
